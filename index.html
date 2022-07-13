@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>API Movies</title>
 </head>
-
-<body>
-    <div class="w-full py-8 bg-gradient-to-r from-[#000000] to-[#2C3E50]">
+<body class="bg-gradient-to-r from-[#000000] to-[#2C3E50]">
+    <div class="w-full py-8">
         <div class="flex justify-center px-5 md:px-16 lg:px-24 mb-7">
             <input type="text" placeholder="Search..."
                 class="mx-auto w-60 md:w-full lg:w-full h-8 bg-transparent border-b border-b-white placeholder:italic placeholder:text-white placeholder:text-sm lg:placeholder:text-lg focus:outline-none px-2 relative text-white"
                 id="input-search">
         </div>
-        <h1 class="text-center text-white font-semibold text-lg lg:text-2xl mb-5 title"></h1>
-        <div class="lg:flex md:flex flex-wrap justify-center px-8 mb-4" id="movie-list"></div>
+        <h1 class="text-center text-white font-semibold text-lg lg:text-2xl mb-7 title"></h1>
+        <div class="lg:flex md:flex flex-wrap justify-center px-8 mb-4">
+            <div id="movie-list" class="hidden flex-wrap justify-center"></div>
+            <div id="movie-detail" class="flex-wrap justify-center"></div>
+        </div>
     </div>
     <script src="assets/jquery-3.6.0.min.js"></script>
     <script src="assets/main.js"></script>
 </body>
-
 </html>
